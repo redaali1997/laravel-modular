@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use Modules\Order\Providers\OrderServiceProvider;
 
 return [
 
@@ -170,6 +171,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+
+        OrderServiceProvider::class
     ])->toArray(),
 
     /*
